@@ -63,7 +63,8 @@ main {
 }
 .terminal-typing {
     color: #f7f3f3;
-    display: inline-block;
+    display: inline;
+    white-space: pre;
 }
 .terminal-content span.typed-cursor {
     color: #f7f3f3;
