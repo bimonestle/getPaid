@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Bungee', cursive !important;
+}
+main {
+    height: calc(100% - 56px);
+    display: flex;
+    flex-flow: initial;
+    -ms-flex-flow: initial;
+    align-items: center;
+}
+.terminal {
+    width: 75%;
+    margin: 0 auto;
+    height: 400px;
+    background-color: #181818;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.terminal-header {
+    background-color: #2F3033;
+    height: 10%;
+}
+.terminal-header-buttons {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    height: 100%;
+    padding: 0 .5em;
+}
+.terminal-header-button {
+    width: 15px;
+    height: 15px;
+    margin: 0 .25em;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.red {
+    background-color: #c40e14;
+}
+.yellow {
+    background-color: #E5BF3C;
+}
+.green {
+    background-color: #57C038;
+}
