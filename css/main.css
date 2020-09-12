@@ -8,6 +8,15 @@ body {
 h1 {
     font-family: 'Bungee', cursive !important;
 }
+.red {
+    background-color: #c40e14;
+}
+.yellow {
+    background-color: #E5BF3C;
+}
+.green {
+    background-color: #57C038;
+}
 main {
     height: calc(100% - 56px);
     display: flex;
@@ -39,8 +48,8 @@ main {
     padding: 0 .5em;
 }
 .terminal-header-button {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     margin: 0 .25em;
     border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -48,12 +57,14 @@ main {
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
-.red {
-    background-color: #c40e14;
+.terminal-content {
+    padding: 1em;
+    overflow: hidden;
 }
-.yellow {
-    background-color: #E5BF3C;
+.terminal-typing {
+    color: #f7f3f3;
+    display: inline-block;
 }
-.green {
-    background-color: #57C038;
+.terminal-content span.typed-cursor {
+    color: #f7f3f3;
 }
