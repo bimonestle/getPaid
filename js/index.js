@@ -1,19 +1,35 @@
+// ANIMATED HEADLINE
+var texts = ['projects', 'business', 'side hustle'];
+var index = 0;
 var textWrapper = document.querySelector('.animated-headline')
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-anime.timeline({loop: true})
-  .add({
-    targets: '.animated-headline .letter',
-    translateY: [-100,0],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 30 * i
-  }).add({
-    targets: '.animated-headline',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+
+setInterval(() => {
+    $('.animated-headline').animate({
+        opacity: 0
+    }, function () {
+        if (texts.length > index) {
+            $(this).text(texts[index]).animate({opacity: 1});
+            index++;
+        }
+        else
+        index = 0;
+    });
+}, 2500);
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.animated-headline .letter',
+//     translateY: [-100,0],
+//     easing: "easeOutExpo",
+//     duration: 1500,
+//     delay: (el, i) => 30 * i
+//   }).add({
+//     targets: '.animated-headline',
+//     opacity: 0,
+//     duration: 2000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
 
 // TERMINAL TYPING
 var options = {
