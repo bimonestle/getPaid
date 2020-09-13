@@ -5,9 +5,9 @@ body {
     height: 100%;
 }
 
-h1 {
+/* h1 {
     font-family: 'Bungee', cursive !important;
-}
+} */
 .red {
     background-color: #c40e14;
 }
@@ -23,9 +23,28 @@ main {
     flex-flow: initial;
     -ms-flex-flow: initial;
     align-items: center;
+    justify-content: center;
+}
+.headline-container {
+    width: 100%;
+    overflow: hidden;
+}
+.animated-headline {
+    color: #181818;
+    padding: 40px 0;
+    font-weight: 800;
+    /* font-size: 16px; */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+}
+.animated-headline .letter {
+    display: inline-block;
+    line-height: 1em;
 }
 .terminal {
     width: 75%;
+    padding: 0;
     margin: 0 auto;
     height: 400px;
     background-color: #181818;
@@ -61,10 +80,12 @@ main {
     padding: 1em;
     overflow: hidden;
 }
+.typing {
+    white-space: pre;
+}
 .terminal-typing {
     color: #f7f3f3;
     display: inline;
-    white-space: pre;
 }
 .terminal-content span.typed-cursor {
     color: #f7f3f3;
